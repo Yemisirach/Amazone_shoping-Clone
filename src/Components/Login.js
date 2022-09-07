@@ -68,17 +68,17 @@ const Login = () => {
       })
       .catch((err) => {
         if (err) navigate("/");
+      })
+      .catch((error) => {
+        if (error) alert("The password is incorrect");
       });
-    // .catch(error => {
-    //    if (error) alert("The password is incorrect");
-    // });
   };
 
   return (
     <div>
-      <div className="sheks">
+      <div className="cont">
         <div className="left ">
-          <div className="log pt-5 bg-white vh-100 d-flex align-items-center flex-column">
+          <div className="log1 pt-5 bg-white vh-100 d-flex align-items-center flex-column">
             <div className="login__container d-flex flex-column rounded-2 p-4">
               <h5 className="fs-2 mb-4">Sign in</h5>
               <form>
@@ -97,7 +97,7 @@ const Login = () => {
                     type={onShow}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="mb-2 bg-white"
+                    className="mb-2 bg-white pl-3"
                   />
                   {icon && <VisibilityIcon onClick={show} />}
                   {!icon && <VisibilityOffIcon onClick={show} />}
@@ -112,11 +112,11 @@ const Login = () => {
                 </button>
               </form>
               <h6 className="mt-3 cont">
-                By continuing, you agree to Amazon's{" "}
+                By continuing, you agree to Amazon's
                 <Link to="/" className="text-decoration-none">
                   Conditions of Use
-                </Link>{" "}
-                and{" "}
+                </Link>
+                and
                 <Link to="/" className="text-decoration-none">
                   Privacy Notice.
                 </Link>
@@ -129,7 +129,7 @@ const Login = () => {
                 </li>
               </ul>
             </div>
-            <div className="a-divider a-divider-break text-center pt-3 ">
+            <div class="a-divider a-divider-break text-center pt-3 ">
               <h5 className="d-inline-block bg-white">New to Amazon?</h5>
             </div>
             <button
@@ -140,7 +140,7 @@ const Login = () => {
             </button>
           </div>
         </div>
-        <div className="right log bg-white vh-100 d-flex supa-strike align-items-center flex-column pe-4">
+        <div className="right yem bg-white vh-100 d-flex supa-strike align-items-center flex-column pe-4">
           <GoogleButton
             className="px-2 bg-light text-black"
             onClick={handleGoogleSignIn}
@@ -152,12 +152,12 @@ const Login = () => {
         <ul className="titanium d-flex">
           <li>
             <Link to="/" className="text-decoration-none mx-3 supreme">
-              Conditions of Use{" "}
+              Conditions of Use
             </Link>
           </li>
           <li>
             <Link to="/" className="text-decoration-none mx-3 supreme">
-              Privacy Notice{" "}
+              Privacy Notice
             </Link>
           </li>
           <li>
