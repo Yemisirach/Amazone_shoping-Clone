@@ -1,0 +1,22 @@
+.New {
+  z-index: 0.5;
+  max-width: 290px;
+  min-height: 50px;
+  transition: transform 450ms;
+}
+
+.New > img {
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 50px;
+}
+
+.sub {
+  padding-left: 60px;
+  margin-left: 60px;
+}
+.sign {
+  font-size: 25px;
+  font-weight: bold;
+  word-wrap: none;
+}

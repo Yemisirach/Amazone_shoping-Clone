@@ -1,0 +1,13 @@
+.book {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 300px;
+}
+.bookimage {
+  max-width: 300px;
+  max-height: 250px;
+}
+.top {
+  padding-left: 20px;
+}

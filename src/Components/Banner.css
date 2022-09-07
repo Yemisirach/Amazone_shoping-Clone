@@ -1,0 +1,27 @@
+.carousel slide {
+  scroll-behavior: none;
+}
+.carousel-indicators {
+  display: none;
+}
+.carousel-inner {
+  z-index: -1;
+  margin-bottom: -330px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow: scroll;
+  width: 100%;
+  object-fit: contain;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  padding-bottom: 370px;
+}
